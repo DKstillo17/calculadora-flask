@@ -1,0 +1,12 @@
+@echo off
+
+if not defined _OLD_VIRTUAL_PROMPT goto NOVPROMPT
+    set PROMPT=%_OLD_VIRTUAL_PROMPT%
+    set _OLD_VIRTUAL_PROMPT=
+
+:NOVPROMPT
+if not defined _OLD_VIRTUAL_PATH goto END
+    set PATH=%_OLD_VIRTUAL_PATH%
+    set _OLD_VIRTUAL_PATH=
+
+:END
