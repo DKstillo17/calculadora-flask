@@ -28,8 +28,12 @@ def send(total=sum):
             return render_template('index.html', total=total)
 
         elif operacion == 'division':
-            total = float(num1) / float(num2)
-            return render_template('index.html', total=total)
+            try:
+                total = float(num1) / float(num2)
+                return render_template('index.html', total=total)
+
+            except ZeroDivisionError as total:
+                return render_template('index.html', total=total)
         else:
             return render_template('index.html')
 
